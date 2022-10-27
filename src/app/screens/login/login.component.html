@@ -1,0 +1,11 @@
+<div class="container h-100">
+  <!-- <app-login-widget (newItemEvent)="getCredentials($event)"></app-login-widget> -->
+  <app-login-widget *ngIf="!getLoginStatus('login')"></app-login-widget>
+
+
+
+  <!-- ///////////////////////////////////// -->
+  <app-welcome *ngIf="getLoginStatus( 'welcome')">
+  </app-welcome>
+
+</div>

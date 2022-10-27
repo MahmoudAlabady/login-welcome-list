@@ -1,0 +1,28 @@
+<!-- <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value);" *ngIf="validCredentials"> -->
+<form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value);">
+
+  <!-- Email input -->
+  <div class=" form-outline mb-4">
+    <input type="email" id="email" class="form-control" name="email" formControlName="email"
+      placeholder="Enter your email" #email1 />
+    <label class="form-label" for="form2Example1">Email address</label>
+  </div>
+
+  <!-- Password input -->
+  <div class="form-outline mb-4">
+    <input type="password" id="userPassword" class="form-control" name="password" formControlName="password"
+      placeholder="Enter your password" #password2 />
+    <label class="form-label" for="form2Example2">Password</label>
+  </div>
+
+
+  <!-- Submit button -->
+  <!-- <button type="submit" class="btn btn-primary btn-block mb-4"
+    (click)="validateUser([email1.value,password2.value])">Sign
+    in</button> -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Signin</button>
+
+</form>
+<!-- <label for="item-input">Add an item:</label> -->
+<!-- <input type="text" id="item-input" #newItem> -->
+<!-- <button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button> -->
